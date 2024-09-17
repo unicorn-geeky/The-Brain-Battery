@@ -12,14 +12,11 @@ const userSchema = new mongoose.Schema({
 /* Convert Pwd into hashed format */
 userSchema.pre("save", async function (next) {
     if (this.isModified("password")) {
-        console.log("befor--hash---", this.password);
         this.password = await bcrypt.hash(this.password, 10);
-        console.log("after--hash---", this.password);
         next();
     }
 
 })
 
-/* Model is a wrapper of mongoose schema, provides an interface to the database for manipulating data like create,update,delete etc. */
 const User = mongoose.model('User', userSchema);
 export default User;
