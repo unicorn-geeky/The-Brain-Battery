@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import GoogleSignin from './googleSignin';
 import imageConfig from '../../assets/images';
+import {useNavigate} from 'react-router-dom'
 
 
 const SignIn = () => {
@@ -12,6 +13,7 @@ const SignIn = () => {
     const [emailId, setEmailId] = useState("")
     const [password, setPassword] = useState("")
     const [checkValidation, setCheckValidation] = useState(false)
+    const navigate = useNavigate()
 
     const GoogleAuthWrapper = () => {
         return (
@@ -35,6 +37,7 @@ const SignIn = () => {
             if (emailId && password) {
                 const response = await authService.signin({ emailId, password })
                 if (response) {
+                    navigate('/landing')  
                 }
             }
             else {

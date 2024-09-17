@@ -12,7 +12,7 @@ const GoogleSignin = ({authType}) => {
                 const response = await authService.googleAuth(authRes['code'])
 
                 console.log("response--",response?.data?.data?.token);
-                navigate('/home')               
+                navigate('/landing')               
 
             }
             console.log("authRes--",authRes);
