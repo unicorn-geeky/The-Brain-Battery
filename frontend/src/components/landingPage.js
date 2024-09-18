@@ -33,19 +33,19 @@ const LandingPage = () => {
   const products = [
     { name: 'Lime', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Mango', price: 55, image: limeImage2, variant: 'Variant' },
-    { name: 'Blister Pack', price: 55, image: limeImage3, variant: 'Variant' },
+    { name: 'Blister Pack', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Canister', price: 55, image: limeImage2, variant: 'Variant' },
     { name: 'Lime', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Mango', price: 55, image: limeImage2, variant: 'Variant' },
-    { name: 'Blister Pack', price: 55, image: limeImage3, variant: 'Variant' },
+    { name: 'Blister Pack', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Canistttttttttter', price: 55, image: limeImage2, variant: 'Variant' },
     { name: 'Lime', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Mannnnnnnnngo', price: 55, image: limeImage2, variant: 'Variant' },
-    { name: 'Blister Pack', price: 55, image: limeImage3, variant: 'Variant' },
+    { name: 'Blister Pack', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Canister', price: 55, image: limeImage2, variant: 'Variant' },
     { name: 'Lime', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Mango', price: 55, image: limeImage2, variant: 'Variant' },
-    { name: 'Blister Pack', price: 55, image: limeImage3, variant: 'Variant' },
+    { name: 'Blister Pack', price: 55, image: limeImage1, variant: 'Variant' },
     { name: 'Canistttttttttter', price: 55, image: limeImage2, variant: 'Variant' },
   ];
 
@@ -85,99 +85,99 @@ const LandingPage = () => {
     { image: require('../assets/logo_2.png') }
   ];
 
-    // Slick carousel settings
-    const settings = {
-      dots: true, // Dots for navigation
-      infinite: true, // Infinite scrolling
-      speed: 500, // Transition speed
-      slidesToShow: 6, // Show 4 images at a time
-      slidesToScroll: 1, // Scroll 1 image at a time
-      autoplay: true, // Optional: auto move
-      autoplaySpeed: 1000, // Speed of auto move
-      responsive: [
-        {
-          breakpoint: 768, // Breakpoint for smaller screens (tablets)
-          settings: {
-            slidesToShow: 2, // Show 2 images at a time
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+  // Slick carousel settings
+  const settings = {
+    dots: true, // Dots for navigation
+    infinite: true, // Infinite scrolling
+    speed: 500, // Transition speed
+    slidesToShow: 6, // Show 4 images at a time
+    slidesToScroll: 1, // Scroll 1 image at a time
+    autoplay: true, // Optional: auto move
+    autoplaySpeed: 1000, // Speed of auto move
+    responsive: [
+      {
+        breakpoint: 768, // Breakpoint for smaller screens (tablets)
+        settings: {
+          slidesToShow: 2, // Show 2 images at a time
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
 
-          }
-        },
-        {
-          breakpoint: 480, // Breakpoint for mobile screens
-          settings: {
-            slidesToShow: 1, // Show 1 image at a time
-            slidesToScroll: 1
-          }
         }
-      ]
-    };
+      },
+      {
+        breakpoint: 480, // Breakpoint for mobile screens
+        settings: {
+          slidesToShow: 1, // Show 1 image at a time
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
-    
+
   const testimonials = [
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_1.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_2.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_1.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_2.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_1.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_2.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_1.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
     {
       name: 'Name Surname',
       position: 'Position, Company name',
-      companyLogo: 'webflow-logo-url', // replace with actual URL
-      avatar: 'avatar-url', // replace with actual URL
+      companyLogo:  require('../assets/logo_2.png') , // replace with actual URL
+      avatar:  require('../assets/avatar.png') , // replace with actual URL
       feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       rating: 5,
     },
@@ -326,75 +326,75 @@ const LandingPage = () => {
             GLOBE.
           </Typography>
           <Button
-              variant="outlined"
-              sx={{
-                height:'40px',
-                marginTop: '60px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '10px 20px', // Add padding to make the button wider
-                border: '2px solid #fFF', // Blue border
-                borderRadius: '5px', // Rounded corners
-                backgroundColor: '#000', // White background
-                color: '#fff', // Blue text color
-                fontWeight: 'bold', // Bold text
-                fontSize: '16px',
-                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow effect
-                '&:hover': {
-                  backgroundColor: '#f0f0f0', // Slightly darker on hover
-                  boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.2)',
-                },
-                position: 'relative', // Allows the image to be positioned over the button
+            variant="outlined"
+            sx={{
+              height: '40px',
+              marginTop: '60px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px 20px', // Add padding to make the button wider
+              border: '2px solid #fFF', // Blue border
+              borderRadius: '5px', // Rounded corners
+              backgroundColor: '#000', // White background
+              color: '#fff', // Blue text color
+              fontWeight: 'bold', // Bold text
+              fontSize: '16px',
+              boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Slight shadow effect
+              '&:hover': {
+                backgroundColor: '#f0f0f0', // Slightly darker on hover
+                boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.2)',
+              },
+              position: 'relative', // Allows the image to be positioned over the button
+            }}
+            onClick={() => {
+              // Handle the button click
+              console.log('Button clicked');
+            }}
+          >
+            <img
+              src={require('../assets/Lime-2.png')}
+              alt="product"
+              style={{
+                width: 60,
+                position: 'absolute',
+                left: '-30px', // Position the image to the left of the button
+                transform: 'rotate(-15deg)', // Add a slight rotation to the image
               }}
-              onClick={() => {
-                // Handle the button click
-                console.log('Button clicked');
-              }}
-            >
-              <img
-                src={require('../assets/Lime-2.png')}
-                alt="product"
-                style={{
-                  width: 60,
-                  position: 'absolute',
-                  left: '-30px', // Position the image to the left of the button
-                  transform: 'rotate(-15deg)', // Add a slight rotation to the image
-                }}
-              />
-              SHOP NOW
-            </Button>
+            />
+            SHOP NOW
+          </Button>
         </Box>
       </Box>
 
       {/* Available At Section */}
       <Box
-      sx={{
-        backgroundColor: '#f5f5f5', // Replace with your background image or color
-        padding: '40px 20px',
-        textAlign: 'center',
-        border: '2px solid #fff', // Optional: border like in the screenshot
-        paddingBottom:'80px'
-      }}
-    >
-      {/* Header Section */}
-      <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '60px', marginTop:'15px' }}>
-        AVAILABLE AT
-      </Typography>
+        sx={{
+          backgroundColor: '#f5f5f5', // Replace with your background image or color
+          padding: '40px 20px',
+          textAlign: 'center',
+          border: '2px solid #fff', // Optional: border like in the screenshot
+          paddingBottom: '80px'
+        }}
+      >
+        {/* Header Section */}
+        <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '60px', marginTop: '15px' }}>
+          AVAILABLE AT
+        </Typography>
 
-      {/* Slider Section */}
-      <Slider {...settings}>
-        {iconTextArray.map((item, index) => (
-          <Box key={index} sx={{ padding: '0 10px' }}>
-            <img
-              src={item.image}
-              alt={`Image ${index}`}
-              style={{ maxWidth: '100%', height: 'auto' }}
-            />
-          </Box>
-        ))}
-      </Slider>
-    </Box>
+        {/* Slider Section */}
+        <Slider {...settings}>
+          {iconTextArray.map((item, index) => (
+            <Box key={index} sx={{ padding: '0 10px' }}>
+              <img
+                src={item.image}
+                alt={`Image ${index}`}
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+            </Box>
+          ))}
+        </Slider>
+      </Box>
 
       {/* Benefits of 10X Section */}
       <Box
@@ -506,6 +506,7 @@ const LandingPage = () => {
           padding: '50px',
           height: '100vh',
           backgroundRepeat: 'no-repeat',
+          textAlign: 'left'
 
         }}
       >
@@ -513,7 +514,7 @@ const LandingPage = () => {
         <Box sx={{ flex: 1 }}>
           <Typography
             variant="h2"
-            sx={{ fontWeight: 'bold', color: '#000', lineHeight: '1.2' }}
+            sx={{ fontWeight: 'bold', color: '#000', lineHeight: '1.2', maxWidth: '500px' }}
           >
             TAKE CHARGE.<br />
             OWN THE DAY.
@@ -522,7 +523,7 @@ const LandingPage = () => {
             10X is the winner’s shot. A compact, pocket-sized essential that keeps high performers switched on to seize the day, and regenerates cells during the night for a refreshed wake up. It's essential for those who desire to regain control of their energy and maximize their ROI.
           </Typography>
           {/* Button */}
-          <Box sx={{ marginTop: 4 }}>
+          <Box sx={{ marginTop: 4, maxWidth: '200px' }}>
             <Button
               variant="contained"
               sx={{
@@ -541,25 +542,57 @@ const LandingPage = () => {
         </Box>
 
         {/* Right Side: Image */}
-        {/* <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
           <img
-            // src={require('../assets/section-single-product.png')} // Replace with the actual path of your can image
+            src={require('../assets/Lime 1.png')} // Replace with the actual path of your can image
             alt="10X Can"
             // style={{ height: '400px' }}
           />
-        </Box> */}
+        </Box>
       </Box>
 
-{/* Collection */}
+      {/* Collection */}
       <Box sx={{ padding: '20px' }}>
         {/* Collection Header */}
-        <Typography variant="h3" component="h1" align="center" gutterBottom>
-          COLLECTION
-        </Typography>
-        <Typography variant="body1" align="center" paragraph>
-          Take a look at our expansive collection.
-        </Typography>
 
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            padding: '10px'
+          }}>
+          <Box>
+            <Box>
+              <Box
+                sx={{
+                  borderTop: '10px solid #000', // Set border properties here
+                  width: '100%', // Ensure it spans the full width
+                  marginTop: '10px'
+                }}
+              />
+              <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#000', maxWidth: '400px', marginTop: 1, marginBottom: 1 }}>
+                COLLECTION
+              </Typography>
+              <Box
+                sx={{
+                  borderBottom: '10px solid #000', // Set border properties here
+                  width: '100%', // Ensure it spans the full width
+                  marginBottom: '20px'
+                }}
+              />
+            </Box>
+
+            <Typography variant="body1" align="left" marginBottom='20px'>
+              Take a look at our expansive collection.
+            </Typography>
+          </Box>
+          <Box sx={{ mt: 4 }}>
+            <Button variant="outlined" sx={{ padding: '10px', fontWeight: 'bold', marginRight: '20px' }}>
+              VIEW ALL
+            </Button>
+          </Box>
+
+        </Box>
         {/* Product Grid */}
         <Grid container spacing={4} justifyContent="center">
           {paginatedProducts.map((product, index) => (
@@ -604,7 +637,7 @@ const LandingPage = () => {
       </Box>
 
 
-{/* About 10X */}
+      {/* About 10X */}
       <Box
         sx={{
           display: 'flex',
@@ -637,7 +670,7 @@ const LandingPage = () => {
 
                 <img
                   src={lightVector}
-                  style={{ height: '50px', padding: '20px 60px', }}
+                  style={{ height: '100px', padding: '20px 100px',  }}
                 />
                 <Typography variant="h6">TAKE CONTROL</Typography>
                 <Typography variant="body2">
@@ -649,7 +682,7 @@ const LandingPage = () => {
               <Box>
                 <img
                   src={powerVector}
-                  style={{ height: '50px', padding: '20px 60px', }}
+                  style={{ height: '100px', padding: '20px 100px', }}
                 />
                 <Typography variant="h6">KEEP GOING</Typography>
                 <Typography variant="body2">
@@ -670,7 +703,7 @@ const LandingPage = () => {
         </Box>
       </Box>
 
-{/* Happy Customer */}
+      {/* Happy Customer */}
       <Box sx={{ padding: '40px' }}>
         {/* Header Section */}
         <Grid container justifyContent="space-between" alignItems="center">
@@ -755,7 +788,7 @@ const LandingPage = () => {
         </Box>
       </Box>
 
-
+      {/* Discover Our Collection */}
       <Box
         sx={{
           height: '400px', // Adjust height as needed
@@ -785,18 +818,18 @@ const LandingPage = () => {
           </Grid>
 
           {/* Right side image */}
-          <Grid item xs={12} md={6} sx={{ textAlign: 'right' }}>
+          <Grid item xs={12} md={6} sx={{ dispay:'flex', justifyContent:'flex-end' }}>
             <img
               src={limeImage1} // Replace with the actual product image
               alt="Product"
-              style={{ maxWidth: '100%', height: '400px', marginRight: '20px' }}
+              style={{ maxWidth: '50%', height: '400px'}}
             />
 
           </Grid>
         </Grid>
       </Box>
 
-
+      {/* Blogs */}
       <Box sx={{ padding: '30px', backgroundColor: '#E6E6E6' }}>
         {/* Blog Header */}
         <Box sx={{ marginBottom: '40px' }}>
@@ -860,7 +893,7 @@ const LandingPage = () => {
         </Box>
       </Box>
 
-
+      {/* Social */}
       <Box sx={{ padding: '40px', display: 'flex', alignItems: 'center' }}>
         <Grid container spacing={4}>
           {/* Left Side */}
@@ -956,8 +989,10 @@ const LandingPage = () => {
         </Grid>
       </Box>
 
-
+      {/* Footer */}
       <Footer />
+
+
     </Box>
   );
 };
