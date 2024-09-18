@@ -19,6 +19,7 @@ import StarIcon from '@mui/icons-material/Star';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import Footer from './footer';
 import Slider from 'react-slick';
+import imageConfig from '../assets/images';
 
 
 
@@ -542,9 +543,10 @@ const LandingPage = () => {
         </Box>
 
         {/* Right Side: Image */}
-        <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ position: 'relative', zIndex: '1', justifyContent: 'center',bottom: '155px', right: '94px' }}>   
+          <img src={imageConfig.loginEnlarged} style={{position: 'absolute', zIndex: '-99'}}/>
           <img
-            src={require('../assets/Lime 1.png')} // Replace with the actual path of your can image
+            src={require('../assets/Lime 1.png')} // Replace with the actual path of your can image display: 'flex',flex: 1,
             alt="10X Can"
             // style={{ height: '400px' }}
           />
