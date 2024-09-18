@@ -52,7 +52,7 @@ const SignIn = () => {
     }
     return (
         <div className='min-h-screen flex items-center justify-center bg-gray-400 relative z-10'>
-         <div style={enlarged} className='absolute -z-99 left-72'/>
+         <div style={enlarged} className='absolute -z-10 left-72'/>
 
             <div className='signup-container  p-12 bg-white' style={{width: "28rem"}}>
                 <div className="signup-header text-left mb-6">
@@ -63,7 +63,7 @@ const SignIn = () => {
 
                 <div className='text-left mb-2 text-red-500'>{checkValidation && "Enter required details below"}</div>
 
-                <form className="text-left" onSubmit={onSignIn}>
+                <form className="text-left" onSubmit={onSignIn}> 
 
                     <div className="flex flex-col mb-4">
                         <label className="form-label" htmlFor="email">Email*</label>
